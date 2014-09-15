@@ -1,0 +1,34 @@
+[user]
+	name = Jeff Wang
+	email = jeffwang@tumblr.com
+
+[alias]
+    # COMMIT
+    cm = commit -m
+
+    # STASH
+    ss = stash save
+    sp = stash pop
+    sl = stash list
+    m = merge --no-ff
+    mm = merge origin/master --no-ff
+[branch]
+    autosetuprebase = always
+
+[color]
+	ui = always
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = green
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[push]
+    default = current
