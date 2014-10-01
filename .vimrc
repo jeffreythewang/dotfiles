@@ -1,3 +1,6 @@
+set nocompatible
+filetype off
+
 set nu
 set ruler
 set statusline=%f
@@ -32,7 +35,7 @@ set background=light
 " colorscheme desert
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins 
+" => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -66,7 +69,4 @@ Bundle 'joonty/vdebug.git'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:vdebug_options= {
-\ "port" : 9000,
-\ "server" : "",
-\ "path_maps" : {"/var/www/apps/tumblr" : "PATH_TO_TUMBLR_APP_LOCAL"}
 \}

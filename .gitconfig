@@ -1,6 +1,6 @@
 [user]
 	name = Jeff Wang
-	email = jeffwang@tumblr.com
+	email = jeffreywang93@gmail.com
 
 [alias]
     # COMMIT
@@ -32,3 +32,5 @@
     untracked = cyan
 [push]
     default = current
+[core]
+	editor = vim
