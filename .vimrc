@@ -1,6 +1,46 @@
 set nocompatible
 filetype off
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+call vundle#begin()
+
+"""
+Plugin 'tpope/vim-fugitive'
+Plugin 'jpalardy/vim-slime'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+
+""" CSS Syntax
+Plugin 'JulesWang/css.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+
+"""
+Plugin 'joonty/vdebug.git'
+
+"""
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+""" Slime
+let g:slime_target = "tmux"
+let g:slime_python_ipython = 1
+
+""" Nerd Tree
+"autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Columns & Lines
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nu
 set ruler
 set statusline=%f
@@ -33,36 +73,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 syntax on
 set background=light
 " colorscheme desert
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-"""
-Plugin 'tpope/vim-fugitive'
-
-
-"""
-execute pathogen#infect()
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-""" Nerd Tree
-"autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-""" CSS Syntax
-Bundle 'JulesWang/css.vim'
-Bundle 'cakebaker/scss-syntax.vim'
-
-Bundle 'joonty/vdebug.git'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Debug Stuff
