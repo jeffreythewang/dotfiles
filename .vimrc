@@ -9,22 +9,21 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 call vundle#begin()
+    """
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'jpalardy/vim-slime'
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'scrooloose/syntastic'
+    Plugin 'Valloric/YouCompleteMe'
 
-"""
-Plugin 'tpope/vim-fugitive'
-Plugin 'jpalardy/vim-slime'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
+    """ CSS Syntax
+    Plugin 'JulesWang/css.vim'
+    Plugin 'cakebaker/scss-syntax.vim'
 
-""" CSS Syntax
-Plugin 'JulesWang/css.vim'
-Plugin 'cakebaker/scss-syntax.vim'
+    """
+    Plugin 'joonty/vdebug.git'
 
-"""
-Plugin 'joonty/vdebug.git'
-
-"""
+    """
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -61,6 +60,8 @@ set noswapfile
 
 set tabstop=4
 set shiftwidth=4
+set backspace=indent,eol,start
+
 set expandtab
 set autoindent
 set smartindent
