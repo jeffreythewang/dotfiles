@@ -15,12 +15,17 @@ call vundle#begin()
     Plugin 'scrooloose/nerdtree'
     Plugin 'scrooloose/syntastic'
     Plugin 'Valloric/YouCompleteMe'
+    Plugin 'amdt/vim-niji'
 
     """ CSS Syntax
     Plugin 'JulesWang/css.vim'
     Plugin 'cakebaker/scss-syntax.vim'
 
+    """ Verilog Syntax (why would you ever use this?)
+    Plugin 'nachumk/systemverilog.vim'
+
     """
+    Plugin 'chriskempson/base16-vim'
     Plugin 'joonty/vdebug.git'
 
     """
@@ -58,8 +63,8 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set backspace=indent,eol,start
 
 set expandtab
@@ -73,7 +78,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 syntax on
 set background=light
-" colorscheme desert
+" colorscheme base16-tomorrow
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mouse
