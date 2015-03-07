@@ -12,6 +12,7 @@
     sl = stash list
     m = merge --no-ff
     mm = merge origin/master --no-ff
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [branch]
     autosetuprebase = always
 
