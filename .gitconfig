@@ -35,3 +35,9 @@
     default = current
 [core]
 	editor = vim
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[credential]
+	helper = osxkeychain
