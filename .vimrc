@@ -6,7 +6,6 @@ filetype off
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set rtp+=~/.vim/bundle/Vundle.vim
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 call vundle#begin()
     """
@@ -15,6 +14,7 @@ call vundle#begin()
     Plugin 'scrooloose/nerdtree'
     Plugin 'scrooloose/syntastic'
     Plugin 'amdt/vim-niji'
+    Plugin 'kien/ctrlp.vim'
 
     """ CSS Syntax
     Plugin 'JulesWang/css.vim'
