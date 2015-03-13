@@ -14,7 +14,6 @@ call vundle#begin()
     Plugin 'jpalardy/vim-slime'
     Plugin 'scrooloose/nerdtree'
     Plugin 'scrooloose/syntastic'
-    Plugin 'Valloric/YouCompleteMe'
     Plugin 'amdt/vim-niji'
 
     """ CSS Syntax
@@ -48,6 +47,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set nu
 set ruler
 set statusline=%f
+set cursorline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
