@@ -13,6 +13,7 @@ call vundle#begin()
     Plugin 'jpalardy/vim-slime'
     Plugin 'scrooloose/nerdtree'
     Plugin 'scrooloose/syntastic'
+    Plugin 'Valloric/YouCompleteMe'
     Plugin 'amdt/vim-niji'
     Plugin 'kien/ctrlp.vim'
 
