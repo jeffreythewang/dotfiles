@@ -16,6 +16,7 @@ call vundle#begin()
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'amdt/vim-niji'
     Plugin 'kien/ctrlp.vim'
+    Plugin 'mileszs/ack.vim'
 
     """ CSS Syntax
     Plugin 'JulesWang/css.vim'
@@ -23,6 +24,9 @@ call vundle#begin()
 
     """ Verilog Syntax (why would you ever use this?)
     Plugin 'nachumk/systemverilog.vim'
+
+    """ Scala Syntax
+    Plugin 'derekwyatt/vim-scala'
 
     """
     Plugin 'chriskempson/base16-vim'
