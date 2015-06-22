@@ -14,7 +14,7 @@ call vundle#begin()
     Plugin 'scrooloose/nerdtree'
     Plugin 'scrooloose/syntastic'
     Plugin 'Valloric/YouCompleteMe'
-    Plugin 'amdt/vim-niji'
+    Plugin 'losingkeys/vim-niji'
     Plugin 'kien/ctrlp.vim'
     Plugin 'mileszs/ack.vim'
 
@@ -68,9 +68,9 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set backspace=indent,eol,start
 
 set expandtab

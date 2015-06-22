@@ -1,6 +1,6 @@
 [user]
-	name = Jeff Wang
-	email = jeffreywang93@gmail.com
+    name = Jeff Wang
+    email = jeffreywang93@gmail.com
 
 [alias]
     # COMMIT
@@ -17,7 +17,7 @@
     autosetuprebase = always
 
 [color]
-	ui = always
+    ui = always
 [color "branch"]
     current = yellow reverse
     local = yellow
@@ -34,10 +34,10 @@
 [push]
     default = current
 [core]
-	editor = vim
+    editor = vim
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
