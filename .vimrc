@@ -12,7 +12,8 @@ call vundle#begin()
     Plugin 'tpope/vim-fugitive'
     Plugin 'jpalardy/vim-slime'
     Plugin 'scrooloose/nerdtree'
-    Plugin 'scrooloose/syntastic'
+    Plugin 'jistr/vim-nerdtree-tabs'
+    "Plugin 'scrooloose/syntastic'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'losingkeys/vim-niji'
     Plugin 'kien/ctrlp.vim'
@@ -40,10 +41,10 @@ filetype plugin indent on    " required
 let g:slime_target = "tmux"
 let g:slime_python_ipython = 1
 
-""" Nerd Tree
-"autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nerd Tree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-n> :NERDTreeTabsToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -68,9 +69,9 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set backspace=indent,eol,start
 
 set expandtab
