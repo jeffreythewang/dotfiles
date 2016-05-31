@@ -3,41 +3,40 @@
 	email = jeffreywang93@gmail.com
 
 [alias]
-    # COMMIT
-    cm = commit -m
+# COMMIT
+  cm = commit -m
 
-    # STASH
-    ss = stash save
-    sp = stash pop
-    sl = stash list
-    m = merge --no-ff
-    mm = merge origin/master --no-ff
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+# STASH
+  ss = stash save
+  sp = stash pop
+  sl = stash list
+  m = merge --no-ff
+  mm = merge origin/master --no-ff
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [branch]
-    autosetuprebase = always
-
+  autosetuprebase = always
 [color]
-	ui = always
+  ui = always
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 [color "diff"]
-    meta = yellow
-    frag = magenta
-    old = red
-    new = green
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+  added = yellow
+  changed = green
+  untracked = cyan
 [push]
-    default = current
+  default = current
 [core]
-	editor = vim
+  editor = vim
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
