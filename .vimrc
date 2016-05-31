@@ -12,9 +12,10 @@ call vundle#begin()
     Plugin 'tpope/vim-fugitive'
     Plugin 'jpalardy/vim-slime'
     Plugin 'scrooloose/nerdtree'
-    Plugin 'scrooloose/syntastic'
+    Plugin 'jistr/vim-nerdtree-tabs'
+    "Plugin 'scrooloose/syntastic'
     Plugin 'Valloric/YouCompleteMe'
-    Plugin 'amdt/vim-niji'
+    Plugin 'losingkeys/vim-niji'
     Plugin 'kien/ctrlp.vim'
     Plugin 'mileszs/ack.vim'
     Plugin 'myusuf3/numbers.vim'
@@ -52,8 +53,9 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:slime_target = "tmux"
 let g:slime_python_ipython = 1
 
-""" Nerd Tree
-"autocmd vimenter * NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nerd Tree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
