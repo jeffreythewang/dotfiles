@@ -14,7 +14,7 @@ call vundle#begin()
     Plugin 'scrooloose/nerdtree'
     Plugin 'jistr/vim-nerdtree-tabs'
     "Plugin 'scrooloose/syntastic'
-    Plugin 'Valloric/YouCompleteMe'
+    "Plugin 'Valloric/YouCompleteMe'
     Plugin 'losingkeys/vim-niji'
     Plugin 'kien/ctrlp.vim'
     Plugin 'mileszs/ack.vim'
@@ -83,6 +83,9 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" yank to clipboard (requires 7.4)
+set clipboard=unnamed
+
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -97,7 +100,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " => Colors and Font
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-set background=light
+set background=dark
 "colorscheme base16-tomorrow
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
