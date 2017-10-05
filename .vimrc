@@ -18,9 +18,13 @@ call vundle#begin()
     Plugin 'losingkeys/vim-niji'
     Plugin 'kien/ctrlp.vim'
     Plugin 'mileszs/ack.vim'
-    Plugin 'myusuf3/numbers.vim'
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
+
+    """ JS Syntax
+    Plugin 'pangloss/vim-javascript'
+    Plugin 'briancollins/vim-jst'
+    Plugin 'mxw/vim-jsx'
 
     """ CSS Syntax
     Plugin 'JulesWang/css.vim'
@@ -92,8 +96,8 @@ set softtabstop=2
 set backspace=indent,eol,start
 
 set expandtab
-set autoindent
-set smartindent
+
+filetype indent off
 autocmd BufWritePre * :%s/\s\+$//e
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
